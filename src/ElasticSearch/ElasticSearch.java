@@ -11,7 +11,6 @@ public class ElasticSearch {
             <artifactId>elasticsearch</artifactId>
             <version>${es.version}</version>
         </dependency>
-     */
 
     Settings settings = Settings.settingsBuilder()
             .put("cluster.name", "clusterNameHere").build();
@@ -29,5 +28,5 @@ public class ElasticSearch {
             .setFrom(0).setSize(60).setExplain(true)
             .execute()
             .actionGet();
-
+    */
 }
